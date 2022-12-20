@@ -1,0 +1,40 @@
+GET http://127.0.0.1:3000/7
+
+###
+post http://127.0.0.1:3000/new
+Content-Type: application/json
+
+{
+    "name": "nguyen huu hung",
+    "username": "nguyen huu hung",
+    "password": "ajsdhasjdh",
+    "email": "hung@123",
+    "phone": 123,
+    "zipcode": 4123,
+    "city": "hung",
+    "role": 1
+}
+###
+put http://127.0.0.1:3000/update/0
+Content-Type: application/json
+
+{
+    "name": "nguyen huu huy",
+    "username": "nguyen huu hung",
+    "password": "ajsdhasjdh",
+    "email": "hung@123",
+    "phone": 123,
+    "zipcode": 4123,
+    "city": "hung",
+    "role": 1
+}
+###
+DELETE http://127.0.0.1:3000/delete/11
+###
+post http://127.0.0.1:3000/login
+Content-Type: application/json
+
+{
+    "email": "hung@123",
+    "password": "ajsdhasjdh"
+}
